@@ -31,26 +31,38 @@
   .post-btn{margin-left:auto;border:0;font:inherit;font-size:12.5px;font-weight:800;
     background:var(--sun);color:var(--ink);border-radius:99px;padding:7px 14px;cursor:pointer}
   .strip{display:flex;gap:8px;overflow-x:auto;border-radius:12px}
-  .strip img{height:210px;border-radius:10px;display:block;border:1px solid rgba(14,26,51,.1)}
+  .strip img{height:250px;border-radius:10px;display:block;border:1px solid rgba(14,26,51,.1)}
   .cap{margin-top:10px;background:#F4F7FE;border-radius:12px;padding:10px 12px;position:relative}
   .cap pre{white-space:pre-wrap;font:500 13px/1.5 -apple-system,system-ui,sans-serif;
     max-height:120px;overflow:auto;padding-right:86px}
   .copy{position:absolute;top:8px;right:8px;border:0;font:inherit;font-size:11.5px;font-weight:800;
     background:var(--blue);color:#fff;border-radius:99px;padding:6px 11px;cursor:pointer}
   .empty{text-align:center;padding:60px 20px;opacity:.6;font-weight:600}
+  .tabs{display:flex;gap:8px;margin-top:10px}
+  .tab{border:0;font:inherit;font-size:12.5px;font-weight:800;border-radius:99px;
+    padding:6px 14px;background:rgba(255,255,255,.18);color:#fff;cursor:pointer}
+  .tab.on{background:#fff;color:var(--blue)}
+  .card.hidden{display:none}
+  .nslides{font-size:11px;font-weight:800;background:var(--ice);color:var(--ink);
+    border-radius:99px;padding:3px 8px}
 </style></head><body>
 <div class="top">
   <h1>quickfinds <span>daily</span></h1>
-  <div class="meta"><span>2026-08-10</span><span>23 posts</span>
+  <div class="meta"><span>2026-08-10</span><span>23 posts · 136 slides</span>
     <span class="prog"><b id="done">0</b>/23 posted</span></div>
+  <div class="tabs">
+    <button class="tab on" data-f="all" onclick="setFilter('all',this)">All 23</button>
+    <button class="tab" data-f="instagram" onclick="setFilter('instagram',this)">IG 13</button>
+    <button class="tab" data-f="tiktok" onclick="setFilter('tiktok',this)">TikTok 10</button>
+  </div>
 </div>
 <nav class="days"><a class="day" href="index.html">08-14</a><span class="day on">08-10</span><a class="day" href="day-2026-08-07.html">08-07</a></nav>
 <main>
-    <article class="card" data-id="2026-08-10:instagram:beauty_finds:2026-08-10-007">
+    <article class="card" data-id="2026-08-10:instagram:beauty_finds:2026-08-10-007" data-platform="instagram">
       <header>
         <span class="chip instagram">Instagram</span>
         <span class="acct">@beauty_finds</span>
-        <span class="njob">#2026-08-10-007</span>
+        <span class="nslides">5 slides</span>
         <button class="post-btn" onclick="togglePosted('2026-08-10:instagram:beauty_finds:2026-08-10-007', this)">mark posted</button>
       </header>
       <div class="strip">
@@ -69,11 +81,11 @@
       </div>
     </article>
 
-    <article class="card" data-id="2026-08-10:instagram:beauty_finds:2026-08-10-008">
+    <article class="card" data-id="2026-08-10:instagram:beauty_finds:2026-08-10-008" data-platform="instagram">
       <header>
         <span class="chip instagram">Instagram</span>
         <span class="acct">@beauty_finds</span>
-        <span class="njob">#2026-08-10-008</span>
+        <span class="nslides">6 slides</span>
         <button class="post-btn" onclick="togglePosted('2026-08-10:instagram:beauty_finds:2026-08-10-008', this)">mark posted</button>
       </header>
       <div class="strip">
@@ -93,11 +105,11 @@
       </div>
     </article>
 
-    <article class="card" data-id="2026-08-10:instagram:clearance_finds:2026-08-10-001">
+    <article class="card" data-id="2026-08-10:instagram:clearance_finds:2026-08-10-001" data-platform="instagram">
       <header>
         <span class="chip instagram">Instagram</span>
         <span class="acct">@clearance_finds</span>
-        <span class="njob">#2026-08-10-001</span>
+        <span class="nslides">6 slides</span>
         <button class="post-btn" onclick="togglePosted('2026-08-10:instagram:clearance_finds:2026-08-10-001', this)">mark posted</button>
       </header>
       <div class="strip">
@@ -124,11 +136,11 @@ Clearance sells through — comment DEALS and catch the next drop early.
       </div>
     </article>
 
-    <article class="card" data-id="2026-08-10:instagram:college_finds:2026-08-10-005">
+    <article class="card" data-id="2026-08-10:instagram:college_finds:2026-08-10-005" data-platform="instagram">
       <header>
         <span class="chip instagram">Instagram</span>
         <span class="acct">@college_finds</span>
-        <span class="njob">#2026-08-10-005</span>
+        <span class="nslides">6 slides</span>
         <button class="post-btn" onclick="togglePosted('2026-08-10:instagram:college_finds:2026-08-10-005', this)">mark posted</button>
       </header>
       <div class="strip">
@@ -148,11 +160,11 @@ Clearance sells through — comment DEALS and catch the next drop early.
       </div>
     </article>
 
-    <article class="card" data-id="2026-08-10:instagram:college_finds:2026-08-10-006">
+    <article class="card" data-id="2026-08-10:instagram:college_finds:2026-08-10-006" data-platform="instagram">
       <header>
         <span class="chip instagram">Instagram</span>
         <span class="acct">@college_finds</span>
-        <span class="njob">#2026-08-10-006</span>
+        <span class="nslides">6 slides</span>
         <button class="post-btn" onclick="togglePosted('2026-08-10:instagram:college_finds:2026-08-10-006', this)">mark posted</button>
       </header>
       <div class="strip">
@@ -172,11 +184,11 @@ Clearance sells through — comment DEALS and catch the next drop early.
       </div>
     </article>
 
-    <article class="card" data-id="2026-08-10:instagram:coupon_round_up:2026-08-10-001">
+    <article class="card" data-id="2026-08-10:instagram:coupon_round_up:2026-08-10-001" data-platform="instagram">
       <header>
         <span class="chip instagram">Instagram</span>
         <span class="acct">@coupon_round_up</span>
-        <span class="njob">#2026-08-10-001</span>
+        <span class="nslides">6 slides</span>
         <button class="post-btn" onclick="togglePosted('2026-08-10:instagram:coupon_round_up:2026-08-10-001', this)">mark posted</button>
       </header>
       <div class="strip">
@@ -203,11 +215,11 @@ Codes come and go fast — comment DEALS and we’ll send the newest ones first.
       </div>
     </article>
 
-    <article class="card" data-id="2026-08-10:instagram:daily_deals:2026-08-10-001">
+    <article class="card" data-id="2026-08-10:instagram:daily_deals:2026-08-10-001" data-platform="instagram">
       <header>
         <span class="chip instagram">Instagram</span>
         <span class="acct">@daily_deals</span>
-        <span class="njob">#2026-08-10-001</span>
+        <span class="nslides">6 slides</span>
         <button class="post-btn" onclick="togglePosted('2026-08-10:instagram:daily_deals:2026-08-10-001', this)">mark posted</button>
       </header>
       <div class="strip">
@@ -234,11 +246,11 @@ Fresh list every morning. Comment DEALS to get tomorrow’s first.
       </div>
     </article>
 
-    <article class="card" data-id="2026-08-10:instagram:daily_finds:2026-08-10-009">
+    <article class="card" data-id="2026-08-10:instagram:daily_finds:2026-08-10-009" data-platform="instagram">
       <header>
         <span class="chip instagram">Instagram</span>
         <span class="acct">@daily_finds</span>
-        <span class="njob">#2026-08-10-009</span>
+        <span class="nslides">6 slides</span>
         <button class="post-btn" onclick="togglePosted('2026-08-10:instagram:daily_finds:2026-08-10-009', this)">mark posted</button>
       </header>
       <div class="strip">
@@ -258,11 +270,11 @@ Fresh list every morning. Comment DEALS to get tomorrow’s first.
       </div>
     </article>
 
-    <article class="card" data-id="2026-08-10:instagram:daily_finds:2026-08-10-010">
+    <article class="card" data-id="2026-08-10:instagram:daily_finds:2026-08-10-010" data-platform="instagram">
       <header>
         <span class="chip instagram">Instagram</span>
         <span class="acct">@daily_finds</span>
-        <span class="njob">#2026-08-10-010</span>
+        <span class="nslides">6 slides</span>
         <button class="post-btn" onclick="togglePosted('2026-08-10:instagram:daily_finds:2026-08-10-010', this)">mark posted</button>
       </header>
       <div class="strip">
@@ -282,11 +294,11 @@ Fresh list every morning. Comment DEALS to get tomorrow’s first.
       </div>
     </article>
 
-    <article class="card" data-id="2026-08-10:instagram:home_finds:2026-08-10-001">
+    <article class="card" data-id="2026-08-10:instagram:home_finds:2026-08-10-001" data-platform="instagram">
       <header>
         <span class="chip instagram">Instagram</span>
         <span class="acct">@home_finds</span>
-        <span class="njob">#2026-08-10-001</span>
+        <span class="nslides">6 slides</span>
         <button class="post-btn" onclick="togglePosted('2026-08-10:instagram:home_finds:2026-08-10-001', this)">mark posted</button>
       </header>
       <div class="strip">
@@ -306,11 +318,11 @@ Fresh list every morning. Comment DEALS to get tomorrow’s first.
       </div>
     </article>
 
-    <article class="card" data-id="2026-08-10:instagram:home_finds:2026-08-10-002">
+    <article class="card" data-id="2026-08-10:instagram:home_finds:2026-08-10-002" data-platform="instagram">
       <header>
         <span class="chip instagram">Instagram</span>
         <span class="acct">@home_finds</span>
-        <span class="njob">#2026-08-10-002</span>
+        <span class="nslides">6 slides</span>
         <button class="post-btn" onclick="togglePosted('2026-08-10:instagram:home_finds:2026-08-10-002', this)">mark posted</button>
       </header>
       <div class="strip">
@@ -330,11 +342,11 @@ Fresh list every morning. Comment DEALS to get tomorrow’s first.
       </div>
     </article>
 
-    <article class="card" data-id="2026-08-10:instagram:tech_finds:2026-08-10-003">
+    <article class="card" data-id="2026-08-10:instagram:tech_finds:2026-08-10-003" data-platform="instagram">
       <header>
         <span class="chip instagram">Instagram</span>
         <span class="acct">@tech_finds</span>
-        <span class="njob">#2026-08-10-003</span>
+        <span class="nslides">6 slides</span>
         <button class="post-btn" onclick="togglePosted('2026-08-10:instagram:tech_finds:2026-08-10-003', this)">mark posted</button>
       </header>
       <div class="strip">
@@ -354,11 +366,11 @@ Fresh list every morning. Comment DEALS to get tomorrow’s first.
       </div>
     </article>
 
-    <article class="card" data-id="2026-08-10:instagram:tech_finds:2026-08-10-004">
+    <article class="card" data-id="2026-08-10:instagram:tech_finds:2026-08-10-004" data-platform="instagram">
       <header>
         <span class="chip instagram">Instagram</span>
         <span class="acct">@tech_finds</span>
-        <span class="njob">#2026-08-10-004</span>
+        <span class="nslides">6 slides</span>
         <button class="post-btn" onclick="togglePosted('2026-08-10:instagram:tech_finds:2026-08-10-004', this)">mark posted</button>
       </header>
       <div class="strip">
@@ -378,11 +390,11 @@ Fresh list every morning. Comment DEALS to get tomorrow’s first.
       </div>
     </article>
 
-    <article class="card" data-id="2026-08-10:tiktok:beauty_finds:2026-08-10-007">
+    <article class="card" data-id="2026-08-10:tiktok:beauty_finds:2026-08-10-007" data-platform="tiktok">
       <header>
         <span class="chip tiktok">TikTok</span>
         <span class="acct">@beauty_finds</span>
-        <span class="njob">#2026-08-10-007</span>
+        <span class="nslides">5 slides</span>
         <button class="post-btn" onclick="togglePosted('2026-08-10:tiktok:beauty_finds:2026-08-10-007', this)">mark posted</button>
       </header>
       <div class="strip">
@@ -401,11 +413,11 @@ Fresh list every morning. Comment DEALS to get tomorrow’s first.
       </div>
     </article>
 
-    <article class="card" data-id="2026-08-10:tiktok:beauty_finds:2026-08-10-008">
+    <article class="card" data-id="2026-08-10:tiktok:beauty_finds:2026-08-10-008" data-platform="tiktok">
       <header>
         <span class="chip tiktok">TikTok</span>
         <span class="acct">@beauty_finds</span>
-        <span class="njob">#2026-08-10-008</span>
+        <span class="nslides">7 slides</span>
         <button class="post-btn" onclick="togglePosted('2026-08-10:tiktok:beauty_finds:2026-08-10-008', this)">mark posted</button>
       </header>
       <div class="strip">
@@ -426,11 +438,11 @@ Fresh list every morning. Comment DEALS to get tomorrow’s first.
       </div>
     </article>
 
-    <article class="card" data-id="2026-08-10:tiktok:college_finds:2026-08-10-005">
+    <article class="card" data-id="2026-08-10:tiktok:college_finds:2026-08-10-005" data-platform="tiktok">
       <header>
         <span class="chip tiktok">TikTok</span>
         <span class="acct">@college_finds</span>
-        <span class="njob">#2026-08-10-005</span>
+        <span class="nslides">7 slides</span>
         <button class="post-btn" onclick="togglePosted('2026-08-10:tiktok:college_finds:2026-08-10-005', this)">mark posted</button>
       </header>
       <div class="strip">
@@ -451,11 +463,11 @@ Fresh list every morning. Comment DEALS to get tomorrow’s first.
       </div>
     </article>
 
-    <article class="card" data-id="2026-08-10:tiktok:college_finds:2026-08-10-006">
+    <article class="card" data-id="2026-08-10:tiktok:college_finds:2026-08-10-006" data-platform="tiktok">
       <header>
         <span class="chip tiktok">TikTok</span>
         <span class="acct">@college_finds</span>
-        <span class="njob">#2026-08-10-006</span>
+        <span class="nslides">5 slides</span>
         <button class="post-btn" onclick="togglePosted('2026-08-10:tiktok:college_finds:2026-08-10-006', this)">mark posted</button>
       </header>
       <div class="strip">
@@ -474,11 +486,11 @@ Fresh list every morning. Comment DEALS to get tomorrow’s first.
       </div>
     </article>
 
-    <article class="card" data-id="2026-08-10:tiktok:daily_finds:2026-08-10-009">
+    <article class="card" data-id="2026-08-10:tiktok:daily_finds:2026-08-10-009" data-platform="tiktok">
       <header>
         <span class="chip tiktok">TikTok</span>
         <span class="acct">@daily_finds</span>
-        <span class="njob">#2026-08-10-009</span>
+        <span class="nslides">7 slides</span>
         <button class="post-btn" onclick="togglePosted('2026-08-10:tiktok:daily_finds:2026-08-10-009', this)">mark posted</button>
       </header>
       <div class="strip">
@@ -499,11 +511,11 @@ Fresh list every morning. Comment DEALS to get tomorrow’s first.
       </div>
     </article>
 
-    <article class="card" data-id="2026-08-10:tiktok:daily_finds:2026-08-10-010">
+    <article class="card" data-id="2026-08-10:tiktok:daily_finds:2026-08-10-010" data-platform="tiktok">
       <header>
         <span class="chip tiktok">TikTok</span>
         <span class="acct">@daily_finds</span>
-        <span class="njob">#2026-08-10-010</span>
+        <span class="nslides">5 slides</span>
         <button class="post-btn" onclick="togglePosted('2026-08-10:tiktok:daily_finds:2026-08-10-010', this)">mark posted</button>
       </header>
       <div class="strip">
@@ -522,11 +534,11 @@ Fresh list every morning. Comment DEALS to get tomorrow’s first.
       </div>
     </article>
 
-    <article class="card" data-id="2026-08-10:tiktok:home_finds:2026-08-10-001">
+    <article class="card" data-id="2026-08-10:tiktok:home_finds:2026-08-10-001" data-platform="tiktok">
       <header>
         <span class="chip tiktok">TikTok</span>
         <span class="acct">@home_finds</span>
-        <span class="njob">#2026-08-10-001</span>
+        <span class="nslides">7 slides</span>
         <button class="post-btn" onclick="togglePosted('2026-08-10:tiktok:home_finds:2026-08-10-001', this)">mark posted</button>
       </header>
       <div class="strip">
@@ -547,11 +559,11 @@ Fresh list every morning. Comment DEALS to get tomorrow’s first.
       </div>
     </article>
 
-    <article class="card" data-id="2026-08-10:tiktok:home_finds:2026-08-10-002">
+    <article class="card" data-id="2026-08-10:tiktok:home_finds:2026-08-10-002" data-platform="tiktok">
       <header>
         <span class="chip tiktok">TikTok</span>
         <span class="acct">@home_finds</span>
-        <span class="njob">#2026-08-10-002</span>
+        <span class="nslides">7 slides</span>
         <button class="post-btn" onclick="togglePosted('2026-08-10:tiktok:home_finds:2026-08-10-002', this)">mark posted</button>
       </header>
       <div class="strip">
@@ -572,11 +584,11 @@ Fresh list every morning. Comment DEALS to get tomorrow’s first.
       </div>
     </article>
 
-    <article class="card" data-id="2026-08-10:tiktok:tech_finds:2026-08-10-003">
+    <article class="card" data-id="2026-08-10:tiktok:tech_finds:2026-08-10-003" data-platform="tiktok">
       <header>
         <span class="chip tiktok">TikTok</span>
         <span class="acct">@tech_finds</span>
-        <span class="njob">#2026-08-10-003</span>
+        <span class="nslides">5 slides</span>
         <button class="post-btn" onclick="togglePosted('2026-08-10:tiktok:tech_finds:2026-08-10-003', this)">mark posted</button>
       </header>
       <div class="strip">
@@ -595,11 +607,11 @@ Fresh list every morning. Comment DEALS to get tomorrow’s first.
       </div>
     </article>
 
-    <article class="card" data-id="2026-08-10:tiktok:tech_finds:2026-08-10-004">
+    <article class="card" data-id="2026-08-10:tiktok:tech_finds:2026-08-10-004" data-platform="tiktok">
       <header>
         <span class="chip tiktok">TikTok</span>
         <span class="acct">@tech_finds</span>
-        <span class="njob">#2026-08-10-004</span>
+        <span class="nslides">4 slides</span>
         <button class="post-btn" onclick="togglePosted('2026-08-10:tiktok:tech_finds:2026-08-10-004', this)">mark posted</button>
       </header>
       <div class="strip">
@@ -631,6 +643,10 @@ Fresh list every morning. Comment DEALS to get tomorrow’s first.
     document.getElementById('done').textContent = n;
   }
   function togglePosted(id, btn) { const m = load(); m[id] = !m[id]; if (!m[id]) delete m[id]; save(m); refresh(); }
+  function setFilter(f, btn) {
+    document.querySelectorAll('.tab').forEach((x) => x.classList.toggle('on', x === btn));
+    document.querySelectorAll('.card').forEach((c) => c.classList.toggle('hidden', f !== 'all' && c.dataset.platform !== f));
+  }
   function copyCap(btn) {
     const text = btn.parentElement.querySelector('pre').textContent;
     navigator.clipboard.writeText(text).then(() => { btn.textContent = 'copied ✓'; setTimeout(() => btn.textContent = 'copy caption', 1400); });
